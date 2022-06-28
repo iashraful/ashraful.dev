@@ -1,11 +1,35 @@
 <script>
 import feather from "feather-icons";
-import ProjectRelatedProjects from "../../components/projects/ProjectRelatedProjects.vue";
 export default {
   scrollToTop: true,
   data: () => {
     return {
-      // @todo
+      socialSharings: [
+        {
+          id: 1,
+          name: "Twitter",
+          icon: "twitter",
+          url: "https://twitter.com/_ashraful",
+        },
+        {
+          id: 2,
+          name: "Instagram",
+          icon: "instagram",
+          url: "https://instagram.com/__ashraful",
+        },
+        {
+          id: 3,
+          name: "Facebook",
+          icon: "facebook",
+          url: "https://facebook.com/",
+        },
+        {
+          id: 4,
+          name: "LinkedIn",
+          icon: "linkedin",
+          url: "https://linkedin.com/",
+        },
+      ],
     };
   },
   computed: {
@@ -18,8 +42,7 @@ export default {
   },
   updated() {
     feather.replace();
-  },
-  components: { ProjectRelatedProjects },
+  }
 };
 </script>
 
@@ -195,7 +218,7 @@ export default {
             </p>
             <div class="flex items-center gap-3 mt-5">
               <a
-                v-for="social in project.socialSharings"
+                v-for="social in socialSharings"
                 :key="social.id"
                 :href="social.url"
                 target="__blank"
@@ -237,20 +260,19 @@ export default {
           <p
             v-for="projectDetail in project.projectDetails"
             :key="projectDetail.id"
+            v-html="projectDetail.details"
             class="
               font-general-regular
               mb-5
               text-lg text-ternary-dark
               dark:text-ternary-light
             "
-          >
-            {{ projectDetail.details }}
-          </p>
+          />
         </div>
       </div>
 
       <!-- Project related projects -->
-      <ProjectRelatedProjects />
+      <!-- <ProjectRelatedProjects /> -->
     </div>
 
     <!-- Load not found components if no project found -->
