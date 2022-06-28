@@ -33,7 +33,7 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >7+</span
+          >6+</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
           >Years of experience</span
@@ -51,7 +51,7 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >2k</span
+          >500+</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
           >Stars on GitHub</span
@@ -69,7 +69,7 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >32</span
+          >20+</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
           >Positive feedback</span
@@ -87,7 +87,7 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >77</span
+          >53</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
           >Projects completed</span

@@ -16,8 +16,8 @@ export default {
 <template>
   <div class="block sm:flex sm:gap-10 mt-10 sm:mt-20">
     <!-- About profile image -->
-    <div class="w-full sm:w-1/4 mb-7 sm:mb-0">
-      <img src="~/static/profile.jpeg" class="rounded-lg w-96" alt="" />
+    <div class="w-full sm:w-1/5 mb-7 sm:mb-0">
+      <img src="~/static/profile.jpg" class="rounded-lg w-96" alt="" />
     </div>
 
     <!-- About details -->
@@ -32,9 +32,8 @@ export default {
           dark:text-ternary-light
           text-lg
         "
-      >
-        {{ bio.bio }}
-      </p>
+        v-html="bio.bio"
+      />
     </div>
   </div>
 </template>

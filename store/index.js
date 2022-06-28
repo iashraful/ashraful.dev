@@ -701,57 +701,37 @@ export const state = () => ({
       ],
     },
   ],
-  clientsHeading: "Some of the brands I worked with",
+  clientsHeading: "Whom I've worked with",
   clients: [
     {
       id: uuidv4(),
-      title: "Amazon",
-      img: "../brands/amazon_gray.png",
+      title: "Field Buzz",
+      img: "../brands/fieldbuzz.png",
+      url: "https://field.buzz"
     },
     {
       id: uuidv4(),
-      title: "Sony",
-      img: "../brands/sony_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "Adidas",
-      img: "../brands/adidas_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "FILA",
-      img: "../brands/fila_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "NB",
-      img: "../brands/nb_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "SAMSUNG",
-      img: "../brands/samsung_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "CANON",
-      img: "../brands/canon_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "PUMA",
-      img: "../brands/puma_gray.png",
+      title: "Vivasoft Ltd.",
+      img: "../brands/vivasoft.png",
+      url: "https://www.vivasoftltd.com/"
     },
   ],
   aboutMe: [
     {
       id: uuidv4(),
-      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+      bio: "<strong>Mohammad Ashraful Islam</strong><br/>Senior Software Engineer at <a target='_blank' href='https://vivasoftltd.com'>Vivasoft Ltd.</a>"
     },
     {
       id: uuidv4(),
-      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+      bio: "A motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I can use my skills to the advantage of the company while having the scope to develop my own skills."
+    },
+    {
+      id: uuidv4(),
+      bio: "I have 6+ years of professional expeience of Python, Django, Javascript. I do customize project/system for individual/company."
+    },
+    {
+      id: uuidv4(),
+      bio: "Beside everything else, I am a motor bike lover and traveller. I love to travel accross the world."
     },
   ],
   copyrightDate: new Date().getFullYear(),
@@ -760,25 +740,25 @@ export const state = () => ({
       id: uuidv4(),
       name: "GitHub",
       icon: "github",
-      url: "https://github.com/realstoman",
+      url: "https://github.com/iashraful",
     },
     {
       id: uuidv4(),
       name: "Twitter",
       icon: "twitter",
-      url: "https://twitter.com/realstoman",
+      url: "https://twitter.com/_ashraful",
     },
     {
       id: uuidv4(),
-      name: "Medium",
+      name: "Dev.to",
       icon: "book",
-      url: "https://stoman.medium.com",
+      url: "https://dev.to/ashraful",
     },
     {
       id: uuidv4(),
       name: "Instagram",
       icon: "instagram",
-      url: "https://instagram.com/realstoman",
+      url: "https://instagram.com/__ashraful",
     },
   ],
   categories: [
@@ -789,18 +769,13 @@ export const state = () => ({
     },
     {
       id: uuidv4(),
-      value: "mobile",
-      name: "Mobile Applicaiton",
+      value: "server",
+      name: "Server Deployment",
     },
     {
       id: uuidv4(),
-      value: "ui-ux",
-      name: "UI/UX Design",
-    },
-    {
-      id: uuidv4(),
-      value: "branding",
-      name: "Branding & Animations",
+      value: "desktop",
+      name: "Desktop Application",
     },
   ],
 });
