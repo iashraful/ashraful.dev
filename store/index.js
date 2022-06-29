@@ -5,11 +5,11 @@ export const state = () => ({
   projectsDescription: "Some of the projects I have successfully completed",
   projects: [
     {
-      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
+      id: "myspace-a-lifestyle-app",
       title: "MySpace: A lifestyle management app",
       category: "Web Application",
       img: "images/myspace-notes.png",
-      publishDate: "May 16, 2022",
+      publishDate: "Still Developing...",
       tag: "Python, FastAPI, MongoDB, Javascript, VueJS",
       clientTitle: "About Client",
       objectivesTitle: "Objective",
@@ -101,7 +101,7 @@ export const state = () => ({
     },
 
     {
-      id: "260d1271-f1f2-4bc9-a5eb-asdsadasds",
+      id: "barati-cable-network",
       title: "Barati Cable Network",
       category: "Web Application",
       img: "images/web-project-2.jpg",
@@ -177,6 +177,95 @@ export const state = () => ({
       ],
 
     },
+
+    {
+      id: "frisory-sweden-ecommerce-project",
+      title: "Frisory",
+      category: "API Development",
+      img: "images/frisory-home.png",
+      publishDate: "Still Developing...",
+      tag: "Python, Django, Django REST Framework, PostgreSQL, Javascript, React, NextJS",
+      clientTitle: "About Client",
+      objectivesTitle: "Objective",
+      objectivesDetails: "To manage ecommerce product as well as their Shops. It's mostly beauty product seller and services. For example, beauty parlour, salon, etc.",
+      techTitle: "Tools & Technologies",
+      detailsTitle: "Story of \"Frisory\"",
+      socialTitle: "Share This",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "Frisory API",
+          img: "../images/frisory-api.png",
+        },
+        {
+          id: uuidv4(),
+          title: "Frisory Payment Page",
+          img: "../images/frisory-pay.png",
+        },
+        {
+          id: uuidv4(),
+          title: "Frisory Cart",
+          img: "../images/frisory-cart.png",
+        },
+      ],
+      companyInfos: [
+        {
+          id: uuidv4(),
+          title: "Name",
+          details: "Frisory.com (Furkanul Islam)",
+        },
+        {
+          id: uuidv4(),
+          title: "Services",
+          details: "Ecommerce, Salon Business, Beauty Products",
+        },
+        {
+          id: uuidv4(),
+          title: "Website",
+          details: "frisory.com",
+        },
+        {
+          id: uuidv4(),
+          title: "Address",
+          details: "Stockholm, Sweden",
+        },
+      ],
+      technologies: [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "PostgreSQL",
+        "JavaScript",
+        "React",
+        "NextJS",
+      ],
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "<strong>Frisory</strong> is an ecommerce application built for Web, Mobile(Android, iOS). It has thee main parts, 1. Web for all users, 2. Vendor for Shop owner, 3. Admin for Shop admin. I am the API developer here. I developed API for mobile, web both. Sometimes it's hard to support with same API for multiple client. But yes, I have done this. I have used my another API development micro framework <a href='https://github.com/iashraful/fast-drf'>Github/fast-drf</a>. So, I am really happy for it. "
+        },
+        {
+          id: uuidv4(),
+          details:
+            "The app has following features," +
+            "<ul class='ml-8 list-disc'>" +
+            "<li>Customer Login</li>" +
+            "<li>Customer can create orders</li>" +
+            "<li>Customer can create bookings</li>" +
+            "<li>Vendor/Admin needs to approve bookings from the vendor app/admin app</li>" +
+            "<li>Stripe payment gateway is integrated for payment</li>" +
+            "<li>Vendor Login</li>" +
+            "<li>Vendor user can manage a single shop assigned to him/her</li>" +
+            "<li>Admin Login</li>" +
+            "<li>Admin app user can manage his/her shop(multiple)</li>" +
+            "<li>Customer can review product or any service</li>" +
+            "<li>Customer can add card, address and all other utilities.</li>" +
+            "</ul>"
+        }
+      ],
+
+    },
   ],
   clientsHeading: "Whom I've worked with",
   clients: [
@@ -190,7 +279,14 @@ export const state = () => ({
       id: uuidv4(),
       title: "Vivasoft Ltd.",
       img: "../brands/vivasoft.png",
-      url: "https://www.vivasoftltd.com/"
+      url: "https://www.vivasoftltd.com"
+    },
+    {
+      id: uuidv4(),
+      title: "Frisory",
+      img: "../brands/frisory.png",
+      url: "https://web.frisory.com",
+      dark: true
     },
   ],
   aboutMe: [
@@ -204,7 +300,7 @@ export const state = () => ({
     },
     {
       id: uuidv4(),
-      bio: "I have 6+ years of professional expeience of Python, Django, Javascript. I do customize project/system for individual/company."
+      bio: "I have 6+ years of professional expeience of Python, Django, FastAPI, Javascript, VueJS, React, Electron. I do customize project/system for individual/company."
     },
     {
       id: uuidv4(),
@@ -251,8 +347,13 @@ export const state = () => ({
     },
     {
       id: uuidv4(),
-      value: "desktop",
-      name: "Desktop Application",
+      value: "api",
+      name: "API Development",
+    },
+    {
+      id: uuidv4(),
+      value: "api",
+      name: "Open Source Development",
     },
   ],
 });

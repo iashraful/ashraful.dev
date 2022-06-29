@@ -26,8 +26,8 @@ export default {
           rounded-lg
           mb-8
           cursor-pointer
-          dark:bg-secondary-light
         "
+        :class="client.dark ? 'bg-secondary-dark' : 'bg-secondary-light'"
       />
     </a>
   </div>
