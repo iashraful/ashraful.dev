@@ -1,18 +1,32 @@
 <script>
+import Axios from 'axios';
 import feather from "feather-icons";
 import Button from "./reusable/Button.vue";
+
 export default {
   props: ["showModal", "modal", "categories"],
   components: { Button },
   data: () => {
     return {
-      // @todo
+      formData: {to_email: "ashrafulrobin3@gmail.com"}
     };
+  },
+  methods: {
+    async submitContact () {
+      try {
+        const response = await Axios.post("https://theashraful.xyz/api/v1/contact-me", this.formData)
+        if (response && response.status === 201) {
+          alert(response.data.msg)
+          this.formData = {to_email: "ashrafulrobin3@gmail.com"}
+        }
+      } catch (e) {
+        console.log(e.response)
+      }
+    },
   },
   mounted() {
     feather.replace();
-  },
-  methods: {},
+  }
 };
 </script>
 
@@ -76,15 +90,12 @@ export default {
               </div>
               <div class="modal-body p-5 w-full h-full">
                 <form
-                  @submit="
-                    (e) => {
-                      e.preventDefault;
-                    }
-                  "
+                  @submit.prevent="submitContact"
                   class="max-w-xl m-4 text-left"
                 >
                   <div class="mt-0">
                     <input
+                      v-model="formData.name"
                       class="
                         w-full
                         px-5
@@ -108,6 +119,7 @@ export default {
                   </div>
                   <div class="mt-6">
                     <input
+                      v-model="formData.from_email"
                       class="
                         w-full
                         px-5
@@ -131,6 +143,7 @@ export default {
                   </div>
                   <div class="mt-6">
                     <select
+                      v-model="formData.remark"
                       class="
                         w-full
                         px-5
@@ -153,7 +166,7 @@ export default {
                       <option
                         v-for="category in categories"
                         :key="category.id"
-                        :value="category.value"
+                        :value="category.name"
                       >
                         {{ category.name }}
                       </option>
@@ -162,6 +175,7 @@ export default {
 
                   <div class="mt-6">
                     <textarea
+                      v-model="formData.message"
                       class="
                         w-full
                         px-5

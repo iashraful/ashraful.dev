@@ -1,12 +1,29 @@
 <script>
+import Axios from 'axios';
 import Button from "../reusable/Button.vue";
+
 export default {
   components: { Button },
   data: () => {
     return {
-      // @todo
+      formData: {
+        to_email: "ashrafulrobin3@gmail.com"
+      }
     };
   },
+  methods: {
+    async submitContact () {
+      try {
+        const response = await Axios.post("https://theashraful.xyz/api/v1/contact-me", this.formData)
+        if (response && response.status === 201) {
+          alert(response.data.msg)
+          this.formData = {to_email: "ashrafulrobin3@gmail.com"}
+        }
+      } catch (e) {
+        console.log(e.response)
+      }
+    }
+  }
 };
 </script>
 
@@ -38,11 +55,7 @@ export default {
         Contact Form
       </p>
       <form
-        @submit="
-          (e) => {
-            e.preventDefault;
-          }
-        "
+        @submit.prevent="submitContact"
         class="font-general-regular space-y-7"
       >
         <div class="">
@@ -52,6 +65,7 @@ export default {
             >Full Name</label
           >
           <input
+            v-model="formData.name"
             class="
               w-full
               px-5
@@ -82,6 +96,7 @@ export default {
             >Email</label
           >
           <input
+            v-model="formData.from_email"
             class="
               w-full
               px-5
@@ -112,6 +127,7 @@ export default {
             >Subject</label
           >
           <input
+            v-model="formData.remark"
             class="
               w-full
               px-5
@@ -143,6 +159,7 @@ export default {
             >Message</label
           >
           <textarea
+            v-model="formData.message"
             class="
               w-full
               px-5
