@@ -39,6 +39,7 @@ export default {
   },
   mounted() {
     feather.replace();
+    window.scrollTo({top: 0});
   },
   updated() {
     feather.replace();
