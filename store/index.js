@@ -8,7 +8,7 @@ export const state = () => ({
       id: "myspace-a-lifestyle-app",
       title: "MySpace: A lifestyle management app",
       category: "Web Application",
-      img: "../images/myspace-notes.png",
+      img: "/images/myspace-notes.png",
       publishDate: "Still Developing...",
       tag: "Python, FastAPI, MongoDB, Javascript, VueJS",
       clientTitle: "About Client",
@@ -21,17 +21,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "MySpace Dashboard",
-          img: "../images/myspace-dashboard.png",
+          img: "/images/myspace-dashboard.png",
         },
         {
           id: uuidv4(),
           title: "MySpace User Profile",
-          img: "../images/myspace-user.png",
+          img: "/images/myspace-user.png",
         },
         {
           id: uuidv4(),
           title: "MySpace Money Manager Category",
-          img: "../images/myspace-category.png",
+          img: "/images/myspace-category.png",
         },
       ],
       companyInfos: [
@@ -104,7 +104,7 @@ export const state = () => ({
       id: "barati-cable-network",
       title: "Barati Cable Network",
       category: "Web Application",
-      img: "../images/web-project-2.jpg",
+      img: "/images/web-project-2.jpg",
       publishDate: "November 25, 2019",
       tag: "Python, Django, PostgreSQL, Javascript, VueJS",
       clientTitle: "About Client",
@@ -117,12 +117,12 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "BaratiCN Customer Details",
-          img: "../images/baraticn-1.jpg",
+          img: "/images/baraticn-1.jpg",
         },
         {
           id: uuidv4(),
           title: "BaratiCN Role",
-          img: "../images/baraticn-2.jpg",
+          img: "/images/baraticn-2.jpg",
         },
       ],
       companyInfos: [
@@ -182,7 +182,7 @@ export const state = () => ({
       id: "frisory-sweden-ecommerce-project",
       title: "Frisory",
       category: "API Development",
-      img: "images/frisory-home.png",
+      img: "/images/frisory-home.png",
       publishDate: "Still Developing...",
       tag: "Python, Django, Django REST Framework, PostgreSQL, Javascript, React, NextJS",
       clientTitle: "About Client",
@@ -195,17 +195,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Frisory API",
-          img: "../images/frisory-api.png",
+          img: "/images/frisory-api.png",
         },
         {
           id: uuidv4(),
           title: "Frisory Payment Page",
-          img: "../images/frisory-pay.png",
+          img: "/images/frisory-pay.png",
         },
         {
           id: uuidv4(),
           title: "Frisory Cart",
-          img: "../images/frisory-cart.png",
+          img: "/images/frisory-cart.png",
         },
       ],
       companyInfos: [
