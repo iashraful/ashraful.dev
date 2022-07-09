@@ -285,11 +285,6 @@ export const state = () => ({
           id: uuidv4(),
           title: "Fast DRF API",
           img: "/images/frisory-api.png",
-        },
-        {
-          id: uuidv4(),
-          title: "Fast DRF Browsable API",
-          img: "/images/frisory-pay.png",
         }
       ],
       companyInfos: [
