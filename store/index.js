@@ -266,6 +266,79 @@ export const state = () => ({
       ],
 
     },
+
+    {
+      id: "fast-drf",
+      title: "Fast DRF",
+      category: "API Development",
+      img: "/images/drf.png",
+      publishDate: "December 2018 (Initial release)",
+      tag: "Python, Django, Django REST Framework",
+      clientTitle: "Who is the user?",
+      objectivesTitle: "Objective",
+      objectivesDetails: "To make API development easy and fast with almost no code. It's model based API maker with scalability.",
+      techTitle: "Tools & Technologies",
+      detailsTitle: "Story of \"Fast DRF\"",
+      socialTitle: "Share This",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "Fast DRF API",
+          img: "/images/frisory-api.png",
+        },
+        {
+          id: uuidv4(),
+          title: "Fast DRF Browsable API",
+          img: "/images/frisory-pay.png",
+        }
+      ],
+      companyInfos: [
+        {
+          id: uuidv4(),
+          title: "Name",
+          details: "Open Source Community",
+        },
+        {
+          id: uuidv4(),
+          title: "Website",
+          details: "github.com/iashraful/fast-drf",
+        },
+        {
+          id: uuidv4(),
+          title: "Github Star",
+          details: "20",
+        },
+      ],
+      technologies: [
+        "Python",
+        "Django",
+        "Django REST Framework"
+      ],
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "<strong>Fast DRF,</strong> is a opensource micro framework for Python. It's written with Django and Django REST Framework. It was 2018 I was a Junior developer of the team. So, I had a lots of repetative API development. It's like basic CRUD APIs I had to develop over and over again. So, I started to plan this framework and gradually it's been developing. I am really glad that people are using this."
+        },
+        {
+          id: uuidv4(),
+          details:
+            "The framework has following features," +
+            "<ul class='ml-8 list-disc'>" +
+            "<li>Models based API generator</li>" +
+            "<li>Runtime Viewset and serializer generator</li>" +
+            "<li>Multiple API versioning support</li>" +
+            "<li>Filtering support</li>" +
+            "<li>select_related and prefetch_related support.</li>" +
+            "<li>URL Customization</li>" +
+            "<li>Override Viewset</li>" +
+            "<li>Override Serializer</li>" +
+            "<li>Django latest support</li>" +
+            "</ul>"
+        }
+      ],
+
+    },
   ],
   clientsHeading: "Whom I've worked with",
   clients: [
