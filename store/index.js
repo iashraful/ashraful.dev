@@ -360,7 +360,7 @@ export const state = () => ({
   aboutMe: [
     {
       id: uuidv4(),
-      bio: "<strong>Mohammad Ashraful Islam</strong><br/>Senior Software Engineer at <a target='_blank' href='https://vivasoftltd.com'>Vivasoft Ltd.</a>"
+      bio: "<strong>Mohammad Ashraful Islam</strong><br/>Assistant Lead Engineer at <a target='_blank' href='https://bKash.com'>bKash Ltd.</a>"
     },
     {
       id: uuidv4(),
